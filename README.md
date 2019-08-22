@@ -12,12 +12,12 @@ Type `node bamazonCustomer.js` to start the app.
 Then enter the id of the item you would like to purchase.
 Enter the quantity that you would like to purchase.
 
-![bamazon]("./images/bamazon.png")
+![bamazon](images/bamazon.png)
 
 The app will then congratulate you on your purchase if there are items in stock and show the total amount owed (the total amount is not currently working)
 
-![bamazon]("./images/bamazon2.png")
+![bamazon](images/bamazon2.png)
 
 otherwise it will say insufficient quantity
 
-![bamazon]("./images/bamazon3.png")
+![bamazon](images/bamazon3.png)
