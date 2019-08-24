@@ -36,8 +36,9 @@ function orderProduct() {
         message: "How many would you like to buy?"
     }
     ]).then(function (answer) {
-        connection.query("SELECT stock_quantity FROM products WHERE item_id = ? ", [answer.item], function (err, res) {
+        connection.query("SELECT * FROM products WHERE item_id = ? ", [answer.item], function (err, res) {
             if (err) throw err;
+            console.log
             var isAvailable = res[0].stock_quantity;
             var howMany = answer.quantity
 
@@ -46,7 +47,9 @@ function orderProduct() {
                 connection.end();
             } else {
                 var newStock = parseInt(res[0].stock_quantity) - parseInt(answer.quantity);
-                var totalPrice = answer.quantity * parseFloat(res[0].price);
+                var totalPrice = answer.quantity * parseFloat(res[0].price.toFixed(2));
+                // console.log(res[0].price.toFixed(2));
+            
 
                 connection.query("UPDATE products SET ? WHERE ?",
                     [

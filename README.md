@@ -14,7 +14,7 @@ Enter the quantity that you would like to purchase.
 
 ![bamazon]("./images/bamazon.png")
 
-The app will then congratulate you on your purchase if there are items in stock and show the total amount owed (the total amount is not currently working)
+The app will then congratulate you on your purchase if there are items in stock and show the total amount owed.
 
 ![bamazon]("./images/bamazon2.png")
 
